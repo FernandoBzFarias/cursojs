@@ -5,60 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
     <style>
-
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 0px;
-            margin: 0px;
-        }
-        img{
-            width: 200px;
-            height: 200px;
+        div#area{
             display: flex;
-            padding-top: 10px;
-            padding-left: 20px;
-        }
-
-        section{
-            margin: 10px;
-            padding: 3px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20pt;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            color: white
+            
             
         }
-        P{
-            padding-top: 10px;
-            padding-left: 10px;
-            text-align: justify;
-        }
-
     </style>
 </head>
 <body>
-    <h1>
-        Fernando Riverson Farias Beserra
-    </h1>
+    
+    <div id="area" onclick="clicar">
+        interaja
+    </div>
 
-    <section>
-        <p>
-            19 anos
-        </p>
+    <script>
 
-        <hr>
+        function cliclar{
+            var a= window.document.getElementById("area")
+            a.innerText= "clicou"
+        }
 
-        <p>
-            mombaça
-        </p>
+    </script>
 
-        <hr>
-
-        <p>
-            tem muita vontade de ganhar a vida programando
-        </p>
-    </section>
-
-    <img src="fotos/Imagem do WhatsApp de 2025-03-29 à(s) 18.42.05_6ecc2102.jpg" alt="eu">
-    <p>Fernando, 20 anos, atualmente cursando Sistemas De Informação. <br>
-       busca aperfeiçoar seus conhecimentos em programação para atuar <br>
-       no mercardo futuramente. Atualmente estuda tanto Js, implementação <br>
-       com bancos de dados e interfaces masi intuitivas.</p>
 </body>
 </html>
