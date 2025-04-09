@@ -23,18 +23,51 @@
 </head>
 <body>
     
-    <div id="area" onclick="clicar">
+    <div id="area">
         interaja
     </div>
 
-    <script>
+    <h1>soma de valores</h1>
+    <input type="number" name="nm1" id="numer1"> +
+    <input type="number" name="nm2" id="numer2">
+    <input type="button" value="somar" onclick="somar()">
 
-        function cliclar{
-            var a= window.document.getElementById("area")
-            a.innerText= "clicou"
+    <div id="soma">
+        resultado
+    </div>
+
+    <script>
+        var area= document.getElementById("area");
+        area.addEventListener("click", clicar);
+         area.addEventListener("mouseenter", entrar);
+         area.addEventListener("mouseout", saiu);
+
+        function clicar() {
+            area.innerText= "clicou"
+            area.style.background= "red";
+            
+        }
+        function entrar(){
+            area.innerText="mouse em cima"
+        }
+        function saiu(){
+             area.innerText= "saiu"
         }
 
+        function somar(){
+            var n1= window.document.getElementById("numer1")
+            var n2= window.document.getElementById("numer2")
+            var s= window.document.getElementById("soma")
+            var tn1 = Number(n1.value) 
+            var tn2 = Number(n2.value)
+            var s= tn1 + tn2 
+            soma.innerText= "resultado= " + s
+
+        }
     </script>
+
+
+
 
 </body>
 </html>
