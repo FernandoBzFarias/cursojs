@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        soma de valores!
+    </h1>
+
+    <input type="number" name="numero1" id="numer1"> +
+    <input type="number" name="numero2" id="numer2">
+    <input type="button" value="soma" onclick="somar()">
+
+    <div id="soma">
+        resultado
+    </div>
+
+    <script>
+        function somar() {
+        var n1= window.document.getElementById("numer1")
+        var n2= window.document.getElementById("numer2")
+    
+        var s=window.document.getElementById("soma")
+        var num1= Number(n1.value)
+        var num2= Number(n2.value)
+        var s= num1 + num2
+        
+       
+
+        if(s>50) {
+            soma.innerText= "soma= " + s
+            soma.innerText= "soma maior que 50 "  + "resultado= " + s
+        }
+        else{
+            soma.innerText= "soma= " + s
+            soma.innerText= "soma menor que 50 "
+        
+        }
+        }
+    </script>
+</body>
+</html>
