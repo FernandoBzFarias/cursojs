@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "cursojs"
+    "liveServer.settings.multiRootWorkspaceName": "cursojs",
+    "liveServer.settings.port": 5501
 }
